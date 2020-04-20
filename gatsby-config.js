@@ -4,6 +4,13 @@ module.exports = {
       resolve: 'gatsby-theme-blog',
       options: {}
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'files',
+        path: `${__dirname}/src`,
+      },
+    },
     'gatsby-plugin-netlify-cms'
   ],
   siteMetadata: {
